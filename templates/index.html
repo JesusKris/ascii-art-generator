@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles/styles.css">
+      <meta charset="UTF-8" />
+      <meta name=viewport content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+
+
+
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+
+<h1>ASCII-ART-WEB</h1>
+<form method="POST" action="/ascii-art" target="ascii-art">     
+<label></label><input placeholder="Write text here" name="Text" place="Text" type="text" style="width: 300px;height: 50px; margin-top: 25px;margin-bottom: 25px; font-size: 40px;"/>
+<form>
+    <div class="pennu">
+      <input style="height:25px; width:25px;" type="radio" id="contactChoice1"
+       name="Banner" value="standard">
+      <label id="label1" for="contactChoice1">Standard</label>
+  
+      <input style="height:25px; width:25px;" type="radio" id="contactChoice2"
+       name="Banner" value="shadow">
+      <label for="contactChoice2">Shadow</label>
+  
+      <input style="height:25px; width:25px;" type="radio" id="contactChoice3"
+       name="Banner" value="thinkertoy">
+      <label for="contactChoice3">Thinkertoy</label>
+    </div>
+    <div>
+      <button id="button" type="submit">Transform your word</button>
+    </div>
+  </form>
+<div class="iframediv">
+<iframe
+style="background: white;width: 80%;height: 200px; overflow-y: scroll; overflow-x: visible;" name="ascii-art" id="ascii-art"></iframe>
+</div>
+</body>
+<script>
+  var list = document.getElementsByTagName("body")[0].getElementsByTagName("iframe")[0];
+  console.log(list.innerHTML)
+</script>
+</html>
+
+
+
+
